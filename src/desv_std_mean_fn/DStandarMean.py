@@ -4,6 +4,9 @@ class DStandarMean:
         squared_diff = [(x - mean) ** 2 for x in data]
         variance = sum(squared_diff) / len(data)
         std_dev = variance ** 0.5
+        # Truncar a tres decimales
+        mean = round(mean, 3)
+        std_dev = round(std_dev, 3)
         return mean, std_dev
 
     # if __name__ == '__main__':
