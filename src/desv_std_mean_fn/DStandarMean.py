@@ -1,7 +1,4 @@
 class DStandarMean:
-    # TODO
-    # TODO
-    # TODO
     def DStandar_Mean(self, data):
         mean = sum(data) / len(data)
         squared_diff = [(x - mean) ** 2 for x in data]
